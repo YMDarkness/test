@@ -6,3 +6,5 @@ a=a.replace(' ','ing ')
 a=a[s:s2]
 a.lower()
 print(a)
+
+print('hi')
