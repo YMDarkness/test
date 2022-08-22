@@ -8,7 +8,7 @@ size=[400,300]
 Screen=pygame.display.set_mode(size)
 
 done=False
-clock=pygame.time.clock()
+clock=pygame.time.Clock()
 
 airplane=pygame.image.load('image/plane.png')
 airplane=pygame.transform.scale(airplane,(60,45))
