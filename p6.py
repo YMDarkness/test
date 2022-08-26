@@ -28,7 +28,7 @@ print(a.get_area())
 class Rectangle(object):
     def __init__(self, length, widht):
         self.length=length
-        self.width=width
+        self.width=widht
 
     def set_length(self, length):
         self.length
