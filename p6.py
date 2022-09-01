@@ -31,7 +31,7 @@ class Rectangle(object):
         self.width=widht
 
     def set_length(self, length):
-        self.length
+        self.length=length
 
     def set_width(self, width):
         self.width=width
