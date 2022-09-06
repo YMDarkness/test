@@ -1,6 +1,3 @@
-from turtle import width
-
-
 class Stack(object):
     def __init__(self):
         self.stack=[]
