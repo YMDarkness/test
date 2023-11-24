@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+.headerArea {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+}
+
+.headerArea .logo {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 215px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.headerArea .topMenuArea {
+  position: relative;
+  height: 70px;
+  margin-left: 230px;
+}
+.headerArea .topMenuArea a {
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  color: #000000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.headerArea .topRightArea {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 70px;
+}
+.headerArea .topRightArea .checkImage {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  object-fit: contain;
+}
+.headerArea .topRightArea .checkText {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+  color: #4ab56a;
+  margin: 0;
+}
+
+.headerArea .topRightArea .searchArea {
+  position: relative;
+  float: left;
+  width: 190px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+
+.headerArea .topRightArea .searchArea input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 30px;
+  border: 0;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.headerArea .topRightArea .searchArea img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.headerArea .topRightArea button {
+  float: left;
+  width: 77px;
+  height: 30px;
+  margin-top: 20px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slideArea {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #ff0000;
+}
+
+.linkArea {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #ffffff;
+}
+.linkArea .linkCenterArea {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin-left: 10%;
+}
+
+.linkArea .linkBox {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  float: left;
+  cursor: pointer;
+}
+.linkArea .linkBox img {
+  position: absolute;
+  left: calc(50% - 70px);
+  top: calc(50% - 70px);
+  width: 140px;
+  height: 140px;
+  transition: all 0.5s;
+}
+.linkArea .linkBox:hover img {
+  transform: scale(1.2);
+}
+
+.noticeArea {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.noticeArea .boxGroupArea {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin-top: 20px;
+}
+.noticeArea .boxGroupArea .box {
+  position: relative;
+  width: calc((100% - 60px) / 4);
+  height: 260px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+  background: #ffffff;
+}
+.noticeArea .boxGroupArea .box:first-child {
+  margin-left: 0;
+}
+.noticeArea .boxGroupArea .box:nth-child(4n) {
+  margin-right: 0;
+}
+
+.noticeArea .boxGroupArea .box .pictureArea {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.noticeArea .boxGroupArea .box .pictureArea img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.noticeArea .boxGroupArea .box .pictureArea .greenBackground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #008800;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.noticeArea .boxGroupArea .box .boxText {
+  width: 100%;
+  line-height: 20px;
+  font-size: 14px;
+  color: #000000;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.noticeArea .boxGroupArea .box .boxBottomArea {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  padding-left: 10px;
+}
+.noticeArea .boxGroupArea .box .boxBottomArea img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.noticeArea .boxGroupArea .box .boxBottomArea p {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  color: #444444;
+  font-size: 12px;
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 10px;
+}
+
+.noticeArea .noticeViewAll {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.noticeArea .boxGroupArea .box:hover .greenBackground {
+  opacity: 0.6;
+}
+
+.footerArea {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+}
+
+.footerArea .linkArea {
+  display: table;
+  width: auto;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.footerArea .linkArea a {
+  display: inline;
+  height: 20px;
+  cursor: pointer;
+}
+.footerArea .linkArea a:hover {
+  color: #008800;
+}
+.footerArea .linkArea p {
+  display: inline;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.centerArea {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin-left: calc(50% - 600px);
+}
